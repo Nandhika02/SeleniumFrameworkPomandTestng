@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Salesforce Test Suite">
+
+<listeners>
+		<listener class-name="com.automation.utility.ListenerUtility"></listener>
+	</listeners>
+ <test name="Salesforce Login and Functional Tests">
+   <parameter name="browserName" value="chrome"></parameter>
+
+    <classes>
+      <class name="com.automation.tests.AccountsTests"/>
+      <class name="com.automation.tests.OpportunitiesTests"/>
+      <class name="com.automation.tests.LoginTests"/>
+      <class name="com.automation.tests.ContactsTests"/>
+      <class name="com.automation.tests.HomeTests"/>
+      <class name="com.automation.tests.LeadsTests"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
